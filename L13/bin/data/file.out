@@ -1,0 +1,25 @@
+v=10;LockEnter(1);Print (v);Fork( v=20;LockEnter(1);Print (v);LockExit(1));Print (v+1);LockExit(1) | 
+
+{}
+
+[]
+v=10 | LockEnter(1);Print (v);Fork( v=20;LockEnter(1);Print (v);LockExit(1));Print (v+1);LockExit(1) | 
+
+{}
+
+[]
+LockEnter(1);Print (v);Fork( v=20;LockEnter(1);Print (v);LockExit(1));Print (v+1);LockExit(1) | 
+
+{v=10}
+
+[]
+LockEnter(1) | Print (v);Fork( v=20;LockEnter(1);Print (v);LockExit(1));Print (v+1);LockExit(1) | 
+
+{v=10}
+
+[]
+
+
+{}
+
+[]
